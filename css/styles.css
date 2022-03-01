@@ -1,0 +1,21 @@
+h1 {
+  text-align: center;
+}
+
+#required1,
+#required2,
+#required3,
+#required4,
+#required5 {
+  display: none;
+  color: red;
+}
+
+.btn {
+  background-color: lightgray;
+}
+
+.visible {
+  font-weight: bold;
+  font-size: large;
+}

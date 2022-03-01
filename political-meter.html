@@ -1,0 +1,215 @@
+<!DOCTYPE html>
+<html lang="en-US">
+  <head>
+    <link href="css/bootstrap.css" rel="stylesheet" type="text/css" />
+    <link href="css/styles.css" rel="stylesheet" type="text/css" />
+    <script src="js/jquery-3.6.0.js"></script>
+    <script src="js/scripts.js"></script>
+    <title>Political Meter</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1>Political Meter</h1>
+      <form id="survey">
+        <!-- Questions for user to ask about political values -->
+        <!-- Question #1 -->
+        <p class="visible">
+          1. All ethnicities should be integrated into society.
+          <span id="required1">This is a required question.</span>
+        </p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question1" value="1" /> 1. Completely
+            agree</label
+          >
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question1" value="2" /> 2. Somewhat
+            agree</label
+          >
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question1" value="3" /> 3. Neutral
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question1" value="4" /> 4. Somewhat
+            disagree
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question1" value="5" /> 5. Completely
+            disagree
+          </label>
+        </div>
+        <br />
+        <!-- Question 2 -->
+        <p class="visible">
+          2. There should be more emphasis on the rehabilitation of criminals
+          than punishment.
+          <span id="required2">This is a required question.</span>
+        </p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question2" value="1" /> 1. Completely
+            agree</label
+          >
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question2" value="2" /> 2. Somewhat
+            agree</label
+          >
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question2" value="3" /> 3. Neutral
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question2" value="4" /> 4. Somewhat
+            disagree
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question2" value="5" /> 5. Completely
+            disagree
+          </label>
+        </div>
+        <br />
+        <!-- Question 3 -->
+        <p class="visible">
+          3. Reservations should be there for low-income families only.
+          <span id="required3">This is a required question.</span>
+        </p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question3" value="1" /> 1. Completely
+            agree</label
+          >
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question3" value="2" /> 2. Somewhat
+            agree</label
+          >
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question3" value="3" /> 3. Neutral
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question3" value="4" /> 4. Somewhat
+            disagree
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question3" value="5" /> 5. Completely
+            disagree
+          </label>
+        </div>
+        <br />
+        <!-- Question 4 -->
+        <p class="visible">
+          4. Government servants should have competitive salaries as given by
+          the private sector.
+          <span id="required4">This is a required question.</span>
+        </p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question4" value="1" /> 1. Completely
+            agree</label
+          >
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question4" value="2" /> 2. Somewhat
+            agree</label
+          >
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question4" value="3" /> 3. Neutral
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question4" value="4" /> 4. Somewhat
+            disagree
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question4" value="5" /> 5. Completely
+            disagree
+          </label>
+        </div>
+        <br />
+        <!-- Question 5 -->
+        <p class="visible">
+          5. Corporations should not be allowed to interfere in political
+          campaigns.
+          <span id="required5">This is a required question.</span>
+        </p>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question5" value="1" /> 1. Completely
+            agree</label
+          >
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question5" value="2" /> 2. Somewhat
+            agree</label
+          >
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question5" value="3" /> 3. Neutral
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question5" value="4" /> 4. Somewhat
+            disagree
+          </label>
+        </div>
+        <div class="radio">
+          <label>
+            <input type="radio" name="question5" value="5" /> 5. Completely
+            disagree
+          </label>
+        </div>
+        <br />
+        <!-- Button to submit results -->
+        <br />
+        <button type="submit" class="btn">Submit Survey</button>
+      </form>
+      <!-- Results of the survey printed on screen -->
+      <div id="results">
+        <br />
+        <br />
+        <h2>Survey Results:</h2>
+        <h6>Question 1:</h6>
+        <p><span class="answer1"></span></p>
+        <h6>Question 2:</h6>
+        <p><span class="answer2"></span></p>
+        <h6>Question 3:</h6>
+        <p><span class="answer3"></span></p>
+        <h6>Question 4:</h6>
+        <p><span class="answer4"></span></p>
+        <h6>Question 5:</h6>
+        <p><span class="answer5"></span></p>
+      </div>
+    </div>
+  </body>
+</html>
