@@ -33,6 +33,19 @@ $(document).ready(function () {
     $(".answer4").text(q4);
     $(".answer5").text(q5);
 
+    // Tally up the values of the answers given by user. Parse to turn string to integer.
+    const total =
+      parseInt(q1) + parseInt(q2) + parseInt(q3) + parseInt(q4) + parseInt(q5);
+
+    // Determine if the total value is "liberal", "moderate", or "conservative".
+    if (total <= 11) {
+      $(".final").text("Your political leaning is liberal.");
+    } else if (total >= 12 && total <= 18) {
+      $(".final").text("Your political leaning is moderate.");
+    } else if (total >= 19 && total <= 25) {
+      $(".final").text("Your political leaning is conservative.");
+    }
+
     // Reveals results
     $("#results").show();
   });
